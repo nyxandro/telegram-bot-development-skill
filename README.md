@@ -13,6 +13,16 @@ It is neutral about language and framework: grammY, Telegraf, aiogram, python-te
 GramIO, Go, Rust, PHP and .NET libraries, or raw HTTPS. The docs decide what exists; the
 installed library decides what the project can call.
 
+## Quick install
+
+In Claude Code, run:
+
+```text
+/plugin install telegram-bot-development --marketplace nyxandro/telegram-bot-development-skill
+```
+
+Older Claude Code, updates, and other agents: see [Install](#install).
+
 ## What the agent does
 
 1. Finds the current Bot API version and reads every change since the version the project's
