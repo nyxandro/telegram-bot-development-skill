@@ -1,13 +1,14 @@
 # Telegram Bot Development Skill
 
-[![Download Skill](https://img.shields.io/badge/Download-telegram--bot--development.skill-blue?style=for-the-badge)](https://github.com/nyxandro/telegram-bot-development-skill/raw/main/dist/telegram-bot-development.skill)
+[![Download Telegram Bot Development Skill](https://img.shields.io/badge/Download-telegram--bot--development.skill-blue?style=for-the-badge)](https://github.com/nyxandro/telegram-bot-development-skill/raw/main/dist/telegram-bot-development.skill)
 
-A skill for Claude Code and OpenCode: build, review and debug Telegram bots and Mini Apps
-against the current Bot API. The Bot API ships a release about every month, and a release can
-replace what the previous one added. An agent writing from memory calls parameters that no
-longer exist, works around features the API now has natively, and quotes limits and fees from a
-year ago. This skill makes the agent check the live official documentation and the library
-installed in the project before it writes, reviews or recommends any Bot API call.
+A Telegram bot development skill for Claude Code and OpenCode: build, review and debug Telegram
+bots and Mini Apps against the current Bot API. The Bot API ships a release about every month,
+and a release can replace what the previous one added. An agent writing from memory calls
+parameters that no longer exist, works around features the API now has natively, and quotes
+limits and fees from a year ago. This skill makes the agent check the live official
+documentation and the library installed in the project before it writes, reviews or recommends
+any Bot API call.
 
 It is neutral about language and framework: grammY, Telegraf, aiogram, python-telegram-bot,
 GramIO, Go, Rust, PHP and .NET libraries, or raw HTTPS. The docs decide what exists; the
