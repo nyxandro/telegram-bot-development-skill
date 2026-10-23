@@ -1,0 +1,25 @@
+{
+  "name": "telegram-bot-development-skill",
+  "description": "The Telegram bot development skill, installable as a Claude Code plugin.",
+  "owner": {
+    "name": "nyxandro",
+    "url": "https://github.com/nyxandro"
+  },
+  "plugins": [
+    {
+      "name": "telegram-bot-development",
+      "source": "./",
+      "description": "Build, review and debug Telegram bots and Mini Apps against the live Bot API: the agent checks the official docs and the library installed in the project before any call.",
+      "category": "development",
+      "tags": [
+        "telegram",
+        "telegram-bot",
+        "telegram-bot-api",
+        "mini-apps",
+        "aiogram",
+        "grammy",
+        "python-telegram-bot"
+      ]
+    }
+  ]
+}

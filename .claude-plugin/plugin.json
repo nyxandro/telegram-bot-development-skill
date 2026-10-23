@@ -1,0 +1,24 @@
+{
+  "name": "telegram-bot-development",
+  "displayName": "Telegram Bot Development",
+  "description": "Build, review and debug Telegram bots and Mini Apps against the live Bot API: the agent checks the official docs and the library installed in the project before any call.",
+  "author": {
+    "name": "nyxandro",
+    "url": "https://github.com/nyxandro"
+  },
+  "homepage": "https://github.com/nyxandro/telegram-bot-development-skill",
+  "repository": "https://github.com/nyxandro/telegram-bot-development-skill",
+  "license": "MIT",
+  "keywords": [
+    "telegram",
+    "telegram-bot",
+    "telegram-bot-api",
+    "mini-apps",
+    "aiogram",
+    "grammy",
+    "python-telegram-bot"
+  ],
+  "skills": [
+    "./telegram-bot-development"
+  ]
+}

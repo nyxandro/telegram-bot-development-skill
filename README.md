@@ -52,9 +52,29 @@ the agent the same official pages as plain URLs.
 
 ## Install
 
-Download `dist/telegram-bot-development.skill` (the badge above) and unpack it into the skills
-folder of your agent, or clone this repository and link the `telegram-bot-development/` folder
-there. No build step.
+**Claude Code, as a plugin.** Run in a Claude Code session:
+
+```text
+/plugin install telegram-bot-development --marketplace nyxandro/telegram-bot-development-skill
+```
+
+This adds the repository as a plugin marketplace and installs the plugin from it, on Claude Code
+2.1.275 or later. On an older version, add the marketplace first:
+
+```text
+/plugin marketplace add nyxandro/telegram-bot-development-skill
+/plugin install telegram-bot-development@telegram-bot-development-skill
+```
+
+The plugin has no pinned version, so every commit to this repository is a new version. To take
+it, run `claude plugin marketplace update telegram-bot-development-skill` and then
+`claude plugin update telegram-bot-development@telegram-bot-development-skill` in your shell,
+or turn on auto-update for the marketplace under `/plugin` → Marketplaces.
+
+**Any agent, as a skill folder.** Download `dist/telegram-bot-development.skill` (the badge
+above) and unpack it into the skills folder of your agent, or clone this repository and link the
+`telegram-bot-development/` folder there. No build step. Install it one way or the other, not
+both: with both, Claude Code loads the skill twice.
 
 The scripts need Python 3.8 or newer and access to core.telegram.org and telegram.org. On
 Windows the interpreter is usually `py -3` or `python`. On macOS with Python from python.org,
@@ -75,6 +95,8 @@ results of past runs, with the fixtures described in its README. It is left out 
 ## Repository layout
 
 ```text
+.claude-plugin/plugin.json            the Claude Code plugin: one skill, the folder below
+.claude-plugin/marketplace.json       this repository as a marketplace that lists the plugin
 telegram-bot-development/             the skill itself
   SKILL.md                            the workflow: the live API and the installed library first
   references/                         eleven references, read only when the task needs them
