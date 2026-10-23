@@ -18,10 +18,11 @@ installed library decides what the project can call.
 In Claude Code, run:
 
 ```text
-/plugin install telegram-bot-development --marketplace nyxandro/telegram-bot-development-skill
+/plugin install telegram-bot-development --marketplace nyxandro/skills
 ```
 
-Older Claude Code, updates, and other agents: see [Install](#install).
+The skill is listed in [nyxandro/skills](https://github.com/nyxandro/skills), the catalog of my
+skills. Older Claude Code, updates, and other agents: see [Install](#install).
 
 ## What the agent does
 
@@ -62,24 +63,25 @@ the agent the same official pages as plain URLs.
 
 ## Install
 
-**Claude Code, as a plugin.** Run in a Claude Code session:
+**Claude Code, as a plugin.** The plugin comes from [nyxandro/skills](https://github.com/nyxandro/skills),
+the catalog of my skills. Run in a Claude Code session:
 
 ```text
-/plugin install telegram-bot-development --marketplace nyxandro/telegram-bot-development-skill
+/plugin install telegram-bot-development --marketplace nyxandro/skills
 ```
 
-This adds the repository as a plugin marketplace and installs the plugin from it, on Claude Code
-2.1.275 or later. On an older version, add the marketplace first:
+This adds the catalog and installs the plugin from it, on Claude Code 2.1.275 or later. On an
+older version, add the catalog first:
 
 ```text
-/plugin marketplace add nyxandro/telegram-bot-development-skill
-/plugin install telegram-bot-development@telegram-bot-development-skill
+/plugin marketplace add nyxandro/skills
+/plugin install telegram-bot-development@nyxandro
 ```
 
-The plugin has no pinned version, so every commit to this repository is a new version. To take
-it, run `claude plugin marketplace update telegram-bot-development-skill` and then
-`claude plugin update telegram-bot-development@telegram-bot-development-skill` in your shell,
-or turn on auto-update for the marketplace under `/plugin` → Marketplaces.
+No version is pinned, so every commit to this repository is a new version. To take it, run
+`claude plugin marketplace update nyxandro` and then
+`claude plugin update telegram-bot-development@nyxandro` in your shell, or turn on auto-update
+for the catalog under `/plugin` → Marketplaces.
 
 **Any agent, as a skill folder.** Download `dist/telegram-bot-development.skill` (the badge
 above) and unpack it into the skills folder of your agent, or clone this repository and link the
@@ -105,8 +107,6 @@ results of past runs, with the fixtures described in its README. It is left out 
 ## Repository layout
 
 ```text
-.claude-plugin/plugin.json            the Claude Code plugin: one skill, the folder below
-.claude-plugin/marketplace.json       this repository as a marketplace that lists the plugin
 telegram-bot-development/             the skill itself
   SKILL.md                            the workflow: the live API and the installed library first
   references/                         eleven references, read only when the task needs them
