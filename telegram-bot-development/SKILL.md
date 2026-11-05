@@ -10,6 +10,8 @@ description: >-
   whenever code, a question or a plan touches a Telegram bot, the Bot API, BotFather or a Mini App,
   even for a small change like a new button or command, and even if the user never says Bot API.
   Russian requests too: телеграм-бот, бот апи, вебхук, инлайн-кнопки, мини-апп, оплата звёздами.
+metadata:
+  version: "1.0.0"
 ---
 
 # Telegram bot development on the current Bot API
